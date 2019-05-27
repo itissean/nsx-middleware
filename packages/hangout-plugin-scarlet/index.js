@@ -8,11 +8,11 @@ const replaceTemplates = (template, fields) => {
   const regex = new RegExp(template, 'g');
   const matches = fields.match(regex);
 
-  const transformed = templates.reduce((prev, curr) => {
-    const stringKey = curr.replace(/\W+/g, '');
+  const transformed = templates.reduce((pipingFields, currentTemplate) => {
+    const stringKey = currentTemplate.replace(/\W+/g, '');
     const replacement = StringManager.get(stringKey);
 
-    return prev.replace(curr, replacement);
+    return pipingFields.replace(currentTemplate, replacement);
   }, fields);
 
   return JSON.stringify({
