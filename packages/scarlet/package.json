@@ -1,0 +1,11 @@
+{
+  "name": "scarlet",
+  "version": "1.0.0",
+  "description": "Named after The Scarlet Letter. String replacer middleware API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Aethelwulf <sean@wulfcode.com>",
+  "license": "MIT"
+}
