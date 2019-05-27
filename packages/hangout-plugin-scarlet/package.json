@@ -4,10 +4,18 @@
   "description": "Named after The Scarlet Letter. String replacer middleware API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./index.test.js",
     "start": "node ./index.js"
   },
   "author": "Sean Aethelwulf <sean@wulfcode.com>",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
+  }
 }
